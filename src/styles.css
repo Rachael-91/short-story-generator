@@ -24,13 +24,16 @@ h1 {
     color: #272044;
 }
 
-form {
-    padding: 30px;
+.form-container {
     background-color: white;
-    border-radius: 10px;
-    display: flex;
-    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
     margin-bottom: 30px;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+form {
+    display: flex;
 }
 
 .instructions {
@@ -40,6 +43,13 @@ form {
     font-size: 16px;
     border-radius: 50px;
     color: black;
+}
+
+.hint {
+    line-height: 1.5;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.6;
 }
 
 .submit-button {
@@ -53,6 +63,21 @@ form {
 
 }
 
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
 .short-story {
     font-size: 16px;
     background-color: #fff;
@@ -65,6 +90,10 @@ form {
 
 .short-story strong {
     color: palevioletred;
+}
+
+.hidden {
+    display: none;
 }
 
 footer {

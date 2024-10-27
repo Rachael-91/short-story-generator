@@ -7,24 +7,26 @@
     <title>AI Short Story Generator</title>
 </head>
 <body>
+<div class="container">
     <header>
-    <h1>Welcome to the Short Story Generator</h1>
-</header>
-<main>
+        <h1>Welcome to the Short Story Generator</h1>
+    </header>
+    <main>
+        <form action="">
+            <input type="text" placeholder="Enter the topic of the short story" autofocus required autocomplete="off" class="instructions"/>
+            <input type="submit" class="submit-button"/>
+        </form>
+        <div class="short-story">
+            I woke up to the sound of someone whispering my name in the dark. <br/>
+            As I reached for the light, I felt a cold hand grab mine from under the bed.
+        </div>
+    </main>
 
-    <form action="">
-        <input type="text" placeholder="Enter the topic of the short story" autofocus required autocomplete="off"/>
-        <input type="submit" />
-    </form>
-
-    <div>
-        I woke up to the sound of someone whispering my name in the dark. <br/>
-        As I reached for the light, I felt a cold hand grab mine from under the bed.
-    </div>
-</main>
     <footer>This AI Project was coded by <a href="https://github.com/Rachael-91" target="_blank">Rachael Alexander</a> 
-        and is open sourced on <a href="https://github.com/Rachael-91/short-story-generator" target="_blank">GitHub</a> 
-        and is hosted on <a href="https://short-story-generator-rachael.netlify.app/" target="_blank">Netlify</a></footer>
-    <script src="src/index.js"></script>
+            and is open sourced on <a href="https://github.com/Rachael-91/short-story-generator" target="_blank">GitHub</a> 
+            and is hosted on <a href="https://short-story-generator-rachael.netlify.app/" target="_blank">Netlify</a>
+    </footer>
+</div>
+<script src="src/index.js"></script>
 </body>
 </html>

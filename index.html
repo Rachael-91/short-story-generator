@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Short Story Generator</title>
 </head>
 <body>
@@ -12,14 +13,11 @@
         <h1>Welcome to the Short Story Generator</h1>
     </header>
     <main>
-        <form action="">
+        <form action="" id="story-form">
             <input type="text" placeholder="Enter the topic of the short story" autofocus required autocomplete="off" class="instructions"/>
             <input type="submit" class="submit-button"/>
         </form>
-        <div class="short-story">
-            I woke up to the sound of someone whispering my name in the dark. <br/>
-            As I reached for the light, I felt a cold hand grab mine from under the bed.
-        </div>
+        <div class="short-story" id="short-story"></div>
     </main>
 
     <footer>This AI Project was coded by <a href="https://github.com/Rachael-91" target="_blank">Rachael Alexander</a> 
